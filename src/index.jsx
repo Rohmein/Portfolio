@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import Home from "./pages/Home";
-import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -20,11 +18,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <GlobalStyle />
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      <Portfolio />
     </Router>
   </React.StrictMode>
 );

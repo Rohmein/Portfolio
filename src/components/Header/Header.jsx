@@ -31,18 +31,20 @@ const StyledLink = styled(Link)`
 
 const Header = () => {
   return (
-    <NavContainer>
-      <div>
-        <HeaderTitle>R.HAUTEFEUILLE</HeaderTitle>
-      </div>
-      <div>
-        <StyledLink to="/">ACCUEIL</StyledLink>
-        <StyledLink to="/projects">PROJETS</StyledLink>
-        <StyledLink to="/projects">COMPÉTENCES</StyledLink>
-        <StyledLink to="/contact">CONTACT</StyledLink>
-        <StyledLink to="/about">MON CV</StyledLink>
-      </div>
-    </NavContainer>
+    <header>
+      <NavContainer>
+        <div>
+          <HeaderTitle>R.HAUTEFEUILLE</HeaderTitle>
+        </div>
+        <div>
+          <StyledLink to="/">ACCUEIL</StyledLink>
+          <StyledLink to="/projects">PROJETS</StyledLink>
+          <StyledLink to="/projects">COMPÉTENCES</StyledLink>
+          <StyledLink to="/contact">CONTACT</StyledLink>
+          <StyledLink to="/about">MON CV</StyledLink>
+        </div>
+      </NavContainer>
+    </header>
   );
 };
 
