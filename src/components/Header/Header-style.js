@@ -23,7 +23,7 @@ export const StyledLink = styled(Link)`
   color: #5b5963;
   transition: 200ms;
   &:hover {
-    background: #5b5963;
+    background: #333;
     color: #ffffff;
   }
 `;

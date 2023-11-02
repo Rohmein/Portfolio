@@ -10,6 +10,20 @@ export const PresentationContent = styled.div`
   max-width: 1000px;
 `;
 
+export const PresentationPicture = styled.img`
+  margin-bottom: 70px;
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+`;
+
+export const Line = styled.div`
+  background: #5b5963;
+  width: 55px;
+  height: 1px;
+  margin: 50px auto;
+`;
+
 export const PresentationTitle = styled.h2`
   cursor: default;
   position: relative;
@@ -40,18 +54,4 @@ export const PresentationText = styled.p`
       color: pink;
     }
   }
-`;
-
-export const PresentationPicture = styled.img`
-  margin-bottom: 70px;
-  max-width: 250px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 12px;
-`;
-
-export const Line = styled.div`
-  background: #5b5963;
-  width: 55px;
-  height: 1px;
-  margin: 30px auto;
 `;

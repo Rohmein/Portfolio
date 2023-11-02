@@ -19,7 +19,7 @@ const Portfolio = () => {
       <Line></Line>
       <ProjectsContainer>
         {Projects.map((project) => (
-          <ProjectsCard to={project.url} key={project.id}>
+          <ProjectsCard key={project.id}>
             <div className="overlay"></div>
             <img src={project.image} alt="Projet" />
             <ProjectContent>

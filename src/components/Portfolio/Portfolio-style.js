@@ -27,7 +27,7 @@ export const PortfolioTitle = styled.h2`
 export const Line = styled.div`
   width: 55px;
   height: 1px;
-  margin: 30px auto;
+  margin: 50px auto;
   background: #5b5963;
 `;
 
@@ -56,13 +56,13 @@ export const ProjectsCard = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #333;
     opacity: 0;
     transition: opacity 0.3s;
   }
 
   &:hover .overlay {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 `;
 
@@ -87,6 +87,11 @@ export const ProjectContent = styled.div`
     padding: 0 50px;
   }
 
+  & h3,
+  p {
+    cursor: default;
+  }
+
   & h3 {
     font-size: 48px;
   }
@@ -97,7 +102,7 @@ export const ProjectContent = styled.div`
 
   & .project-link {
     padding: 10px 20px;
-    background: #5b5963;
+    background: #333;
     border-radius: 25px;
     color: #f5f5f7;
     font-size: 18px;
@@ -107,7 +112,7 @@ export const ProjectContent = styled.div`
 
     &:hover {
       background: #f5f5f7;
-      color: #5b5963;
+      color: #333;
     }
   }
 `;
