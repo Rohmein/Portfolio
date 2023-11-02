@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-export const HomeWrapper = styled.div`
+export const PresentationWrapper = styled.div`
   padding: 100px 0 100px;
   text-align: center;
   background: #f5f5f7;
 `;
 
-export const HomeContent = styled.div`
+export const PresentationContent = styled.div`
   max-width: 1000px;
 `;
 
-export const HomeTitle = styled.h2`
+export const PresentationTitle = styled.h2`
   cursor: default;
   position: relative;
   margin-bottom: 50px;
@@ -29,21 +29,20 @@ export const HomeTitle = styled.h2`
   }
 `;
 
-export const HomeText = styled.p`
+export const PresentationText = styled.p`
   font-size: 21px;
-  font-weight: 300;
   line-height: 1.4;
   & a {
     text-decoration: none;
     color: #49e2d6;
-    transition: 200ms;
+    transition: O.2s;
     &:hover {
       color: pink;
     }
   }
 `;
 
-export const HomePicture = styled.img`
+export const PresentationPicture = styled.img`
   margin-bottom: 70px;
   max-width: 250px;
   border-radius: 50%;
