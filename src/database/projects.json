@@ -2,32 +2,32 @@
   {
     "id": 1,
     "title": "Booki",
-    "url": "https://rohmein.github.io/Projet-03-Openclassrooms/",
-    "image": "",
+    "url": "https://rohmein.github.io/P03-OpenClassrooms/",
+    "image": "Booki_background.webp",
     "description": "Site qui permet de trouver des hébergements et des activités dans la ville de mon choix.",
     "competences": "Ce projet m'a appris à intégrer du code en respectant une maquette, l'agencer correctement et faire en sorte que celui-ci respecte les bonnes pratiques d'intégration."
   },
   {
     "id": 2,
     "title": "Oh my food",
-    "url": "https://rohmein.github.io/Projet-04-Openclassrooms/",
-    "image": "",
+    "url": "https://rohmein.github.io/P04-OpenClassrooms/",
+    "image": "Ohmyfood_background.webp",
     "description": "Site \"mobile first\" qui répertorie les menus de restaurants gastronomiques.",
     "competences": "Ce projet m'a permis de travailler sur les animations et le développement en \"mobile first\"."
   },
   {
     "id": 3,
     "title": "Sophie Bluel",
-    "url": "https://rohmein.github.io/Projet-06-Openclassrooms/",
-    "image": "",
+    "url": "https://rohmein.github.io/P06-Openclassrooms/",
+    "image": "Sophie-Bluel_background.webp",
     "description": "Site qui permet d'afficher les projets de l'utilisateur via un formulaire afin de garnir son portfolio.",
     "competences": "Avec ce projet j'ai commencé à réaliser les possibilités du développement web, j'ai découvert le JavaScript et la possibilité de rendre un site web dynamique."
   },
   {
     "id": 4,
     "title": "Kasa",
-    "url": "https://rohmein.github.io/Projet-08-Openclassrooms/",
-    "image": "",
+    "url": "https://rohmein.github.io/P08-Openclassrooms/",
+    "image": "Kasa_background.webp",
     "description": "Site de location d'appartements entre particuliers.",
     "competences": "Ce projet m'a appris à développer avec React donc la possibilité de développer un site complet en \"single page\", gérer le routing et le partage de données entre les différents composants."
   }
