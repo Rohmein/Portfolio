@@ -28,6 +28,7 @@ export const PresentationTitle = styled.h2`
   cursor: default;
   position: relative;
   margin-bottom: 50px;
+  color: #5b5963;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;
@@ -44,6 +45,7 @@ export const PresentationTitle = styled.h2`
 `;
 
 export const PresentationText = styled.p`
+  color: #5b5963;
   font-size: 21px;
   line-height: 1.4;
   & a {

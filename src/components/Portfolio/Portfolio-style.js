@@ -9,6 +9,7 @@ export const PortfolioTitle = styled.h2`
   cursor: default;
   position: relative;
   margin-bottom: 50px;
+  color: #5b5963;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;

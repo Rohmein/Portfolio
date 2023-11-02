@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  color: #5b5963;
 }`;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
