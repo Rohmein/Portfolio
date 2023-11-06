@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Sophie Bluel",
-    "url": "https://rohmein.github.io/P06-Openclassrooms/",
+    "url": "https://github.com/Rohmein/P06-OpenClassrooms",
     "image": "Sophie-Bluel_background.webp",
     "description": "Site qui permet d'afficher les projets de l'utilisateur via un formulaire afin de garnir son portfolio.",
     "competences": "Avec ce projet j'ai commencé à réaliser les possibilités du développement web, j'ai découvert le JavaScript et la possibilité de rendre un site web dynamique."
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Kasa",
-    "url": "https://rohmein.github.io/P08-Openclassrooms/",
+    "url": "https://github.com/Rohmein/P08-OpenClassrooms",
     "image": "Kasa_background.webp",
     "description": "Site de location d'appartements entre particuliers.",
     "competences": "Ce projet m'a appris à développer avec React donc la possibilité de développer un site complet en \"single page\", gérer le routing et le partage de données entre les différents composants."

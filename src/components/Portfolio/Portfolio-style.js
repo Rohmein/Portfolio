@@ -13,6 +13,7 @@ export const PortfolioTitle = styled.h2`
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;
+
   & span {
     position: absolute;
     top: -40px;
@@ -22,6 +23,24 @@ export const PortfolioTitle = styled.h2`
     font-weight: 800;
     opacity: 0.06;
     z-index: 0;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 25px;
+
+    & span {
+      top: -30px;
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 565px) {
+    font-size: 14px;
+
+    & span {
+      top: -12px;
+      font-size: 28px;
+    }
   }
 `;
 
@@ -33,17 +52,24 @@ export const Line = styled.div`
 `;
 
 export const ProjectsContainer = styled.div`
-  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 100px;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  margin: 0 20px;
+
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ProjectsCard = styled.div`
   position: relative;
   width: 100%;
-  height: 500px;
+  min-height: 400px;
 
   & img {
     width: 100%;
@@ -73,9 +99,11 @@ export const ProjectContent = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  text-align: justify;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 30px;
   opacity: 0;
   transition: opacity 0.3s;
 
@@ -94,11 +122,11 @@ export const ProjectContent = styled.div`
   }
 
   & h3 {
-    font-size: 48px;
+    font-size: 32px;
   }
 
   & p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   & .project-link {
@@ -114,6 +142,49 @@ export const ProjectContent = styled.div`
     &:hover {
       background: #f5f5f7;
       color: #333;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    & * {
+      padding: 0 20px;
+    }
+
+    & h3 {
+      font-size: 30px;
+    }
+
+    & p {
+      font-size: 18px;
+    }
+
+    & .project-link {
+      padding: 8px 16px;
+      font-size: 18px;
+      letter-spacing: 1.1px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    gap: 15px;
+  }
+
+  @media (max-width: 760px) {
+    gap: 50px;
+
+    & .competences {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    & p {
+      font-size: 15px;
+    }
+
+    & .project-link {
+      font-size: 15px;
+      letter-spacing: 1px;
     }
   }
 `;

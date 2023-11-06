@@ -53,11 +53,10 @@ export const Line = styled.div`
 `;
 
 export const ToolsContainer = styled.div`
-  margin: auto;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
-  width: 75%;
 
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
@@ -65,6 +64,7 @@ export const ToolsContainer = styled.div`
 `;
 
 export const ToolsCard = styled.div`
+  margin: 0;
   padding: 30px;
   width: 100%;
   background: white;
