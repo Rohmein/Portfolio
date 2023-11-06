@@ -10,7 +10,7 @@ import Tools from "../../database/tools.json";
 
 const Competences = () => {
   return (
-    <CompetencesWrapper>
+    <CompetencesWrapper id="competences">
       <CompetencesTitle>
         COMPÉTENCES<span>CE QUE J'UTILISE</span>
       </CompetencesTitle>

@@ -11,7 +11,7 @@ import Picture from "../../assets/images/romain.jpg";
 
 const Presentation = () => {
   return (
-    <PresentationWrapper>
+    <PresentationWrapper id="presentation">
       <PresentationPicture src={Picture} alt="Romain Hautefeuille" />
       <PresentationContent>
         <PresentationTitle>

@@ -12,7 +12,7 @@ import Projects from "../../database/projects.json";
 
 const Portfolio = () => {
   return (
-    <PortfolioWrapper>
+    <PortfolioWrapper id="portfolio">
       <PortfolioTitle>
         PORTFOLIO<span>MES PROJETS</span>
       </PortfolioTitle>
