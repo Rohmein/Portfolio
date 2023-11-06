@@ -26,7 +26,7 @@ export const CompetencesTitle = styled.h2`
     z-index: 0;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 855px) {
     font-size: 25px;
 
     & span {
@@ -35,12 +35,20 @@ export const CompetencesTitle = styled.h2`
     }
   }
 
-  @media (max-width: 565px) {
+  @media (max-width: 685px) {
     font-size: 14px;
 
     & span {
       top: -12px;
       font-size: 28px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    font-size: 25px;
+
+    & span {
+      display: none;
     }
   }
 `;

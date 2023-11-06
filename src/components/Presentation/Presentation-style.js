@@ -8,6 +8,7 @@ export const PresentationWrapper = styled.div`
 
 export const PresentationContent = styled.div`
   max-width: 1000px;
+  padding: 40px;
 `;
 
 export const PresentationPicture = styled.img`
@@ -32,6 +33,7 @@ export const PresentationTitle = styled.h2`
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;
+
   & span {
     position: absolute;
     top: -40px;
@@ -42,12 +44,39 @@ export const PresentationTitle = styled.h2`
     opacity: 0.06;
     z-index: 0;
   }
+
+  @media (max-width: 855px) {
+    font-size: 25px;
+
+    & span {
+      top: -30px;
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 685px) {
+    font-size: 14px;
+
+    & span {
+      top: -12px;
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    font-size: 25px;
+
+    & span {
+      display: none;
+    }
+  }
 `;
 
 export const PresentationText = styled.p`
   color: #5b5963;
   font-size: 21px;
   line-height: 1.4;
+
   & a {
     text-decoration: none;
     color: #49e2d6;
@@ -55,5 +84,9 @@ export const PresentationText = styled.p`
     &:hover {
       color: pink;
     }
+  }
+
+  @media (max-width: 685px) {
+    font-size: 16px;
   }
 `;

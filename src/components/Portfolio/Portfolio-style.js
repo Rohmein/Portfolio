@@ -25,7 +25,7 @@ export const PortfolioTitle = styled.h2`
     z-index: 0;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 855px) {
     font-size: 25px;
 
     & span {
@@ -34,12 +34,20 @@ export const PortfolioTitle = styled.h2`
     }
   }
 
-  @media (max-width: 565px) {
+  @media (max-width: 685px) {
     font-size: 14px;
 
     & span {
       top: -12px;
       font-size: 28px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    font-size: 25px;
+
+    & span {
+      display: none;
     }
   }
 `;
@@ -58,10 +66,10 @@ export const ProjectsContainer = styled.div`
   margin: 0 20px;
 
   @media (max-width: 1280px) {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -146,6 +154,8 @@ export const ProjectContent = styled.div`
   }
 
   @media (max-width: 1280px) {
+    gap: 20px;
+
     & * {
       padding: 0 20px;
     }
@@ -165,26 +175,16 @@ export const ProjectContent = styled.div`
     }
   }
 
-  @media (max-width: 1000px) {
-    gap: 15px;
-  }
-
-  @media (max-width: 760px) {
+  @media (max-width: 600px) {
+    text-align: center;
     gap: 50px;
 
     & .competences {
       display: none;
     }
-  }
-
-  @media (max-width: 500px) {
-    & p {
-      font-size: 15px;
-    }
 
     & .project-link {
-      font-size: 15px;
-      letter-spacing: 1px;
+      letter-spacing: 0;
     }
   }
 `;
