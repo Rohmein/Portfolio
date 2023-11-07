@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const CompetencesWrapper = styled.div`
   padding: 100px 0 100px;
   text-align: center;
-  background: #f5f5f7;
+  background: #333;
 `;
 
 export const CompetencesTitle = styled.h2`
   cursor: default;
   position: relative;
   margin-bottom: 50px;
-  color: #5b5963;
+  color: #f5f5f7;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;
@@ -54,7 +54,7 @@ export const CompetencesTitle = styled.h2`
 `;
 
 export const Line = styled.div`
-  background: #5b5963;
+  background: #f5f5f7;
   width: 55px;
   height: 1px;
   margin: 50px auto;
@@ -76,5 +76,5 @@ export const ToolsCard = styled.div`
   padding: 30px;
   width: 100%;
   background: white;
-  box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
 `;

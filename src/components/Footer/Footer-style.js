@@ -3,19 +3,19 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   padding: 50px;
-  background: #333;
+  background: #f5f5f7;
   text-align: center;
 
   & p {
     margin-top: 20px;
-    color: #f5f5f7;
+    color: #333;
     font-size: 12px;
   }
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
   padding: 5px;
-  border: 1px solid #f5f5f7;
+  border: 1px solid #333;
   border-radius: 50%;
-  color: #f5f5f7;
+  color: #333;
 `;

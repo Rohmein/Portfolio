@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PresentationWrapper = styled.div`
   padding: 100px 0 100px;
   text-align: center;
-  background: #f5f5f7;
+  background: #333;
 `;
 
 export const PresentationContent = styled.div`
@@ -15,11 +15,11 @@ export const PresentationPicture = styled.img`
   margin-bottom: 70px;
   max-width: 250px;
   border-radius: 50%;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.5);
 `;
 
 export const Line = styled.div`
-  background: #5b5963;
+  background: #f5f5f7;
   width: 55px;
   height: 1px;
   margin: 50px auto;
@@ -29,7 +29,7 @@ export const PresentationTitle = styled.h2`
   cursor: default;
   position: relative;
   margin-bottom: 50px;
-  color: #5b5963;
+  color: #f5f5f7;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;
@@ -73,16 +73,17 @@ export const PresentationTitle = styled.h2`
 `;
 
 export const PresentationText = styled.p`
-  color: #5b5963;
+  color: #f5f5f7;
   font-size: 21px;
   line-height: 1.4;
 
   & a {
     text-decoration: none;
-    color: #49e2d6;
+    color: pink;
     transition: O.2s;
+
     &:hover {
-      color: pink;
+      color: #49e2d6;
     }
   }
 

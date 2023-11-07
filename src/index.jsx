@@ -18,7 +18,7 @@ root.render(
     <Router>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </Router>
   </React.StrictMode>

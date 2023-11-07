@@ -29,6 +29,7 @@ export const StyledLink = styled.a`
   letter-spacing: 2px;
   color: #5b5963;
   transition: 200ms;
+
   &:hover {
     background: #333;
     color: #ffffff;
