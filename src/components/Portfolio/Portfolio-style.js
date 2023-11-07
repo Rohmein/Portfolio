@@ -139,7 +139,7 @@ export const ProjectContent = styled.div`
 
   & .project-link {
     padding: 10px 20px;
-    background: #333;
+    background: black;
     border-radius: 25px;
     color: #f5f5f7;
     font-size: 18px;

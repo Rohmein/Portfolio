@@ -77,4 +77,10 @@ export const ToolsCard = styled.div`
   width: 100%;
   background: white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: invert(100%);
+  }
 `;

@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": "HTML",
-    "image": "HTML.png"
+    "image": "HTML.webp"
   },
   {
     "id": 2,
     "title": "CSS",
-    "image": "CSS.png"
+    "image": "CSS.webp"
   },
   {
     "id": 3,
@@ -17,7 +17,7 @@
   {
     "id": 4,
     "title": "JavaScript",
-    "image": "Javascript.png"
+    "image": "Javascript.webp"
   },
   {
     "id": 5,

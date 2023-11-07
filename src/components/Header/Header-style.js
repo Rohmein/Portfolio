@@ -28,10 +28,10 @@ export const StyledLink = styled.a`
   font-size: 13px;
   letter-spacing: 2px;
   color: #5b5963;
-  transition: 200ms;
+  transition: all 0.3s;
 
   &.active {
-    background: #333;
+    background: black;
     color: #ffffff;
   }
 

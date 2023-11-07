@@ -18,4 +18,9 @@ export const StyledIcon = styled(FontAwesomeIcon)`
   border: 1px solid #333;
   border-radius: 50%;
   color: #333;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 `;
