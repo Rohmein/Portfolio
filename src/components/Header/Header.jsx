@@ -1,8 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavContainer, HeaderTitle, StyledLink } from "./Header-style";
 
 const Header = () => {
-  const sectionClick = (e) => {
+  const [activeLink, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const presentation = document.getElementById("presentation");
+      const portfolio = document.getElementById("portfolio");
+      const competences = document.getElementById("competences");
+
+      const sections = [presentation, portfolio, competences];
+      const scrollPosition = window.scrollY;
+
+      sections.forEach((section) => {
+        if (
+          section &&
+          scrollPosition >= section.offsetTop - 100 &&
+          scrollPosition < section.offsetTop + section.offsetHeight - 100
+        ) {
+          setActiveSection(section.id);
+        }
+      });
+
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.clientHeight;
+
+      if (scrollPosition + windowHeight === documentHeight) {
+        setActiveSection("competences");
+        return;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const activeAnchor = (e) => {
     e.preventDefault();
 
     const sectionId = e.target.getAttribute("href");
@@ -20,13 +56,25 @@ const Header = () => {
           <HeaderTitle>R.HAUTEFEUILLE</HeaderTitle>
         </div>
         <div>
-          <StyledLink href="#presentation" onClick={sectionClick}>
-            ACCUEIL
+          <StyledLink
+            href="#presentation"
+            className={activeLink === "presentation" ? "active" : ""}
+            onClick={activeAnchor}
+          >
+            PRÉSENTATION
           </StyledLink>
-          <StyledLink href="#portfolio" onClick={sectionClick}>
+          <StyledLink
+            href="#portfolio"
+            className={activeLink === "portfolio" ? "active" : ""}
+            onClick={activeAnchor}
+          >
             PROJETS
           </StyledLink>
-          <StyledLink href="#competences" onClick={sectionClick}>
+          <StyledLink
+            href="#competences"
+            className={activeLink === "competences" ? "active" : ""}
+            onClick={activeAnchor}
+          >
             COMPÉTENCES
           </StyledLink>
           <StyledLink href="mailto:rohmein@live.fr">CONTACT</StyledLink>

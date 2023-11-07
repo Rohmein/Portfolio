@@ -30,6 +30,11 @@ export const StyledLink = styled.a`
   color: #5b5963;
   transition: 200ms;
 
+  &.active {
+    background: #333;
+    color: #ffffff;
+  }
+
   &:hover {
     background: #333;
     color: #ffffff;
