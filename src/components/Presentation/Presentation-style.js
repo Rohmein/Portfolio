@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const PresentationWrapper = styled.div`
+  margin-top: 40px;
   padding: 100px 0 100px;
   text-align: center;
   background: #333;

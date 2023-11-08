@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { NavContainer, HeaderTitle, StyledLink } from "./Header-style";
+import {
+  NavContainer,
+  HeaderTitle,
+  NavLinks,
+  NavLink,
+  Burger,
+  BurgerBar,
+} from "./Header-style";
 
 const Header = () => {
   const [activeLink, setActiveSection] = useState("");
@@ -49,41 +56,57 @@ const Header = () => {
     }
   };
 
+  const [showLinks, setShowLinks] = useState(false);
+
+  const handleShowLinks = () => {
+    setShowLinks(!showLinks);
+  };
+
   return (
-    <header>
-      <NavContainer>
-        <div>
-          <HeaderTitle>R.HAUTEFEUILLE</HeaderTitle>
-        </div>
-        <div>
-          <StyledLink
-            href="#presentation"
-            className={activeLink === "presentation" ? "active" : ""}
-            onClick={activeAnchor}
-          >
-            PRÉSENTATION
-          </StyledLink>
-          <StyledLink
-            href="#portfolio"
-            className={activeLink === "portfolio" ? "active" : ""}
-            onClick={activeAnchor}
-          >
-            PROJETS
-          </StyledLink>
-          <StyledLink
-            href="#competences"
-            className={activeLink === "competences" ? "active" : ""}
-            onClick={activeAnchor}
-          >
-            COMPÉTENCES
-          </StyledLink>
-          <StyledLink href="mailto:rohmein@live.fr">CONTACT</StyledLink>
-          <StyledLink href="https://openclassrooms.com/fr/dashboard/courses">
-            MON CV
-          </StyledLink>
-        </div>
-      </NavContainer>
-    </header>
+    <NavContainer>
+      <div>
+        <HeaderTitle>R.HAUTEFEUILLE</HeaderTitle>
+      </div>
+      <NavLinks className={showLinks ? "show-nav" : ""}>
+        <NavLink
+          href="#presentation"
+          className={activeLink === "presentation" ? "active" : ""}
+          onClick={(e) => {
+            activeAnchor(e);
+            handleShowLinks();
+          }}
+        >
+          PRÉSENTATION
+        </NavLink>
+        <NavLink
+          href="#portfolio"
+          className={activeLink === "portfolio" ? "active" : ""}
+          onClick={(e) => {
+            activeAnchor(e);
+            handleShowLinks();
+          }}
+        >
+          PROJETS
+        </NavLink>
+        <NavLink
+          href="#competences"
+          className={activeLink === "competences" ? "active" : ""}
+          onClick={(e) => {
+            activeAnchor(e);
+            handleShowLinks();
+          }}
+        >
+          COMPÉTENCES
+        </NavLink>
+        <NavLink href="mailto:rohmein@live.fr">CONTACT</NavLink>
+        <NavLink href="https://openclassrooms.com/fr/dashboard/courses">
+          MON CV
+        </NavLink>
+        <Burger onClick={handleShowLinks}>
+          <BurgerBar className="burger-bar"></BurgerBar>
+        </Burger>
+      </NavLinks>
+    </NavContainer>
   );
 };
 
