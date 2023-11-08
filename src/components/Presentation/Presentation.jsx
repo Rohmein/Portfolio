@@ -7,7 +7,7 @@ import {
   PresentationText,
   Line,
 } from "./Presentation-style";
-import Picture from "../../assets/images/romain.jpg";
+import Picture from "../../assets/pictures/romain.jpg";
 
 const Presentation = () => {
   return (

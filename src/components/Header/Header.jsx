@@ -78,7 +78,9 @@ const Header = () => {
             COMPÉTENCES
           </StyledLink>
           <StyledLink href="mailto:rohmein@live.fr">CONTACT</StyledLink>
-          <StyledLink href="/about">MON CV</StyledLink>
+          <StyledLink href="https://openclassrooms.com/fr/dashboard/courses">
+            MON CV
+          </StyledLink>
         </div>
       </NavContainer>
     </header>

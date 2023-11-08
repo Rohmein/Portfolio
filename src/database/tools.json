@@ -2,26 +2,26 @@
   {
     "id": 1,
     "title": "HTML",
-    "image": "HTML.webp"
+    "image": "./assets/pictures/HTML.webp"
   },
   {
     "id": 2,
     "title": "CSS",
-    "image": "CSS.webp"
+    "image": "./assets/pictures/CSS.webp"
   },
   {
     "id": 3,
     "title": "SASS",
-    "image": "SASS.webp"
+    "image": "./assets/pictures/SASS.webp"
   },
   {
     "id": 4,
     "title": "JavaScript",
-    "image": "Javascript.webp"
+    "image": "./assets/pictures/Javascript.webp"
   },
   {
     "id": 5,
     "title": "React",
-    "image": "React.webp"
+    "image": "./assets/pictures/React.webp"
   }
 ]
