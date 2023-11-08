@@ -1,17 +1,23 @@
 import React from "react";
-import { FooterWrapper, StyledIcon } from "./Footer-style";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Arrow, FooterWrapper, Envelop } from "./Footer-style";
+import { faEnvelope, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 const Footer = () => {
   return (
-    <footer>
-      <FooterWrapper>
-        <a href="mailto:rohmein@live.fr">
-          <StyledIcon icon={faEnvelope} />
-        </a>
-        <p>&copy; 2023 Romain HAUTEFEUILLE, Tous droits réservés.</p>
-      </FooterWrapper>
-    </footer>
+    <FooterWrapper>
+      <a href="mailto:rohmein@live.fr">
+        <Envelop icon={faEnvelope} />
+      </a>
+      <p>&copy; 2023 Romain HAUTEFEUILLE, Tous droits réservés.</p>
+      <Arrow icon={faArrowUp} onClick={scrollToTop} />
+    </FooterWrapper>
   );
 };
 

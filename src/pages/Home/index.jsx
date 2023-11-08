@@ -15,7 +15,9 @@ const Home = () => {
         <Portfolio />
         <Competences />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
