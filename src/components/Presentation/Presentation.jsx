@@ -8,6 +8,7 @@ import {
   Line,
 } from "./Presentation-style";
 import Picture from "../../assets/pictures/romain.jpg";
+import CV from "../../assets/documents/cv_romain_hautefeuille.pdf";
 
 const Presentation = () => {
   return (
@@ -33,7 +34,10 @@ const Presentation = () => {
         <br />
         <PresentationText>
           Pour voir mon CV c'est{" "}
-          <a href="https://openclassrooms.com/fr/dashboard/courses">par ici</a>.
+          <a href={CV} target="_blank" rel="noopener noreferrer">
+            par ici
+          </a>
+          .
         </PresentationText>
       </PresentationContent>
     </PresentationWrapper>

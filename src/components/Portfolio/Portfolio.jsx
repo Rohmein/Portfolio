@@ -21,12 +21,17 @@ const Portfolio = () => {
         {Projects.map((project) => (
           <ProjectsCard key={project.id}>
             <div className="overlay"></div>
-            <img src={project.image} alt="Projet" />
+            <img src={project.image} alt={project.title} />
             <ProjectContent>
               <h3>{project.title}</h3>
               <p className="description">{project.description}</p>
               <p className="competences">{project.competences}</p>
-              <Link to={project.url} className="project-link">
+              <Link
+                to={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
                 Aller vers le projet
               </Link>
             </ProjectContent>

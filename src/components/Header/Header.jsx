@@ -7,6 +7,7 @@ import {
   Burger,
   BurgerBar,
 } from "./Header-style";
+import CV from "../../assets/documents/cv_romain_hautefeuille.pdf";
 
 const Header = () => {
   const [activeLink, setActiveSection] = useState("");
@@ -99,7 +100,7 @@ const Header = () => {
           COMPÉTENCES
         </NavLink>
         <NavLink href="mailto:rohmein@live.fr">CONTACT</NavLink>
-        <NavLink href="https://openclassrooms.com/fr/dashboard/courses">
+        <NavLink href={CV} target="_blank" rel="noopener noreferrer">
           MON CV
         </NavLink>
         <Burger onClick={handleShowLinks}>
