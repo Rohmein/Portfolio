@@ -7,7 +7,7 @@ import {
   PresentationText,
   Line,
 } from "./Presentation-style";
-import Picture from "../../assets/pictures/romain.jpg";
+import Picture from "../../assets/pictures/romain.webp";
 import CV from "../../assets/documents/cv_romain_hautefeuille.pdf";
 
 const Presentation = () => {

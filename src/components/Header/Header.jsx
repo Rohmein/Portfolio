@@ -21,18 +21,14 @@ const Header = () => {
       const sections = [presentation, portfolio, competences];
       const scrollPosition = window.scrollY;
 
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.clientHeight;
+
       sections.forEach((section) => {
-        if (
-          section &&
-          scrollPosition >= section.offsetTop - 100 &&
-          scrollPosition < section.offsetTop + section.offsetHeight - 100
-        ) {
+        if (scrollPosition >= section.offsetTop - 100) {
           setActiveSection(section.id);
         }
       });
-
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.body.clientHeight;
 
       if (scrollPosition + windowHeight === documentHeight) {
         setActiveSection("competences");
