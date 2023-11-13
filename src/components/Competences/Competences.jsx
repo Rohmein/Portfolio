@@ -18,7 +18,7 @@ const Competences = () => {
       <ToolsContainer>
         {Tools.map((tool) => (
           <ToolsCard key={tool.id}>
-            <img src={tool.image} alt="Outil"></img>
+            <img src={tool.image} width="128" height="128" alt="Outil"></img>
           </ToolsCard>
         ))}
       </ToolsContainer>

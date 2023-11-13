@@ -13,7 +13,12 @@ import CV from "../../assets/documents/cv_romain_hautefeuille.pdf";
 const Presentation = () => {
   return (
     <PresentationWrapper id="presentation">
-      <PresentationPicture src={Picture} alt="Romain Hautefeuille" />
+      <PresentationPicture
+        src={Picture}
+        width="250"
+        height="250"
+        alt="Romain Hautefeuille"
+      />
       <PresentationContent>
         <PresentationTitle>
           PRÉSENTATION<span>À PROPOS DE MOI</span>
