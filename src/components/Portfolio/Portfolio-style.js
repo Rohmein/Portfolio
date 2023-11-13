@@ -21,7 +21,7 @@ export const PortfolioTitle = styled.h2`
     left: 0;
     font-size: 80px;
     font-weight: 800;
-    opacity: 0.06;
+    opacity: 0.15;
     z-index: 0;
   }
 

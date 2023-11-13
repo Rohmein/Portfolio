@@ -12,8 +12,8 @@ const scrollToTop = () => {
 const Footer = () => {
   return (
     <FooterWrapper>
-      <a href="mailto:rohmein@live.fr">
-        <Envelop icon={faEnvelope} alt="Image pour  m'envoyer un mail" />
+      <a href="mailto:rohmein@live.fr" alt="Image pour m'envoyer un mail">
+        <Envelop icon={faEnvelope} />
       </a>
       <p>&copy; 2023 Romain HAUTEFEUILLE, Tous droits réservés.</p>
       <Arrow icon={faArrowUp} onClick={scrollToTop} />
