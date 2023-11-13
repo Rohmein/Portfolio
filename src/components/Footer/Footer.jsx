@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <a href="mailto:rohmein@live.fr">
-        <Envelop icon={faEnvelope} />
+        <Envelop icon={faEnvelope} alt="Image pour  m'envoyer un mail" />
       </a>
       <p>&copy; 2023 Romain HAUTEFEUILLE, Tous droits réservés.</p>
       <Arrow icon={faArrowUp} onClick={scrollToTop} />

@@ -99,7 +99,7 @@ const Header = () => {
         <NavLink href={CV} target="_blank" rel="noopener noreferrer">
           MON CV
         </NavLink>
-        <Burger onClick={handleShowLinks}>
+        <Burger onClick={handleShowLinks} aria-label="Navigation Button">
           <BurgerBar className="burger-bar"></BurgerBar>
         </Burger>
       </NavLinks>
